@@ -5,7 +5,7 @@
 replicaCount: 5
 
 image:
-  repository: docker.theezel.com/hello-world-dev-feature:7965dc6
+  repository: docker.theezel.com/hello-world-dev-feature:16da7f2
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -24,14 +24,14 @@ ingress:
 
 
   hosts:
-    - host: hello.theezel.com
+    - host: dev.hello.theezel.com
       paths: 
       - /
 
   tls:
   - secretName: hello-ezel
     hosts:
-    - hello.theezel.com
+    - dev.hello.theezel.com
 
 globalEnvironments:
   enabled: true
