@@ -4,6 +4,10 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*tfvars*
+
+*fuchicorp-service-account.json*
+*backend.tf*
 
 # Crash log files
 crash.log
@@ -20,6 +24,7 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+hello-world/deployments/terraform/fuchicorp-service-account.json
 
 # Include override files you do wish to add to version control using negated pattern
 #
